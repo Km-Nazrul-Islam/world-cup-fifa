@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@300;400;600;700&display=swap');
+
+
+/* Common CSS & Utilities Start Here  */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    padding: 28px 70px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Common CSS & Utilities End Here  */
+
+/* ==============================================
+          Header Banner CSS Start Here 
+=================================================*/
+
+.header-banner {
+    padding: 40px 0;
+}
+
+.header-banner-blogs {
+    background-color: #161616;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100vh;
+    padding: 0 42px;
+    border-radius: 20px;
+}
+
+.header-text-info {
+    margin-left: 50px;
+    position: relative;
+    animation: mymove 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 50px;
+    }
+}
+
+
+.header-text-info h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.header-text-info p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #FFFFFF;
+    width: 90%;
+}
+
+.header-img-info {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: auto; 
+}
+
+.header-img-info img {
+    width: 100%;
+    height: auto;
+}
+
+.header-btn {
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* ==============================================
+          Header Banner CSS End Here 
+=================================================*/
+
+/* ==============================================
+          Sidebar CSS Start Here 
+=================================================*/
+
+.sidebar-and-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 8rem;
+}
+
+.left-sidebar-area-blogs {
+    background-color: #FFFFFF;
+    margin-right: 2rem;
+}
+
+.left-sidebar-area {
+    margin: 0 auto;
+    padding: 2rem .5rem;
+    width: 12.5rem;
+    border-radius: 10px;
+    background-color: #161616; 
+}
+
+.left-sidebar-area a {
+    display: block;
+    font-size: 1.26rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.left-sidebar-area a.active {
+    background-color: #DD0000;
+    color: white;
+    margin-top: 1rem;
+}
+
+.left-sidebar-area a:hover:not(.active) {
+    background-color: #FFFFFF;
+    color: black;
+    transform: scale(.9);
+        box-shadow: 6px 5px 2px gray;
+        transition: .4s;
+}
+
+/*-------Right-Card-Area-CSS-----------*/
+
+.right-card-area-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.right-card-area .card-images-info {
+    width: 100%;
+    height: auto;
+}
+
+.right-card-area img:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
+    box-shadow: 2px 6px 5px black;
+    transition: .4s;
+}
+
+.right-card-area .card-btn {
+    border: 1px solid #161616;
+    border-radius: 5px;
+    color: black;
+    padding: 8px 15px;
+    margin-left: 1rem;
+    margin-top: 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.right-card-area .card-btn:hover {
+    color: gray;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.right-card-area .card-text-info {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #161616;
+}
+
+.right-card-area .card-icon-info {
+    display: flex;
+    align-items: center; 
+}
+
+.right-card-area .card-icon-info i {
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5C5C5C;
+    background-color: #FFFFFF;
+}
+
+/* ==============================================
+          Sidebar CSS End Here 
+=================================================*/
+
+
+/* ==============================================
+          Fooetr CSS Start Here 
+=================================================*/
+
+.footer-section-area {
+    background-color: #161616;
+    height: 60vh;
+    margin-top: 8rem;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding-top: 5.06rem;
+}
+
+hr {
+    border-bottom: 1px solid #2d2d2d;
+    margin-bottom: 3.75rem;
+    width: 80%;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-item a {
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    color: aquamarine;
+    transition: .5s;
+}
+
+.fa {
+    padding: 0.6rem;
+    font-size: 1.25rem;
+    width: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.footer-social-icon {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+
+/* ==============================================
+          Fooetr CSS End Here 
+=================================================*/
+
+
+        @media screen and (max-width: 600px){
+                .container { 
+                    width: 100%;
+                    max-width: 600px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                }
+            
+            
+                .header-banner-blogs {
+                    background-color: #161616;
+                    flex-direction: column;
+                    height: 100vh;
+                    column-width: 100%;
+                }
+            
+                .header-text-info {
+                    margin-left: 10px;
+                    position: relative;
+                    animation: mymove 1s;
+                    animation-timing-function: linear;
+                }
+            
+                @keyframes mymove {
+                    from {
+                        left: 0px;
+                    }
+            
+                    to {
+                        left: 50px;
+                    }
+                }
+            
+            
+                .header-text-info h1 {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: #FFFFFF;
+                }
+            
+                .header-text-info p {
+                    font-size: 1rem;
+                    font-weight: normal;
+                    color: #FFFFFF;
+                }
+            
+                .header-btn {
+                    background-color: #E02C6D;
+                    border: none;
+                    border-radius: 10px;
+                    color: white;
+                    padding: 10px 20px;
+                    margin: 20px 0;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+
+                        .sidebar-and-card {
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            margin-top: 8rem;
+                        }
+        
+               
+        
+                .left-sidebar-area {
+                    margin: 0 auto;
+                    padding: 2rem .5rem;
+                    width: 12.5rem;
+                    border-radius: 10px;
+                    background-color: #FFFFFF;
+                }
+        
+                .left-sidebar-area a {
+                  font-size: 25px;
+                  color: #161616;
+                  font-weight: bold;
+                  border: 1 px solid gray;
+                }
+        
+        
+                /*-------Right-Card-Area-CSS-----------*/
+        
+                .right-card-area-blogs {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    width: 100%;
+                    overflow: hidden;
+                }
+        
+             .footer-section-area {
+                    background-color: #161616;
+                    height: 80vh;
+                    margin-top: 1rem;
+                }
+
+                .footer-item {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                 .footer-item a {
+                    padding: 10px 0;
+                }
+
+                
+
+}
+
